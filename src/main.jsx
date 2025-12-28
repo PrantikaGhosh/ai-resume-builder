@@ -8,11 +8,23 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import SignInPage from './auth/sign-in/index.jsx'  
+import { Home } from 'lucide-react';
+import Dashboard from './dashboard/index.js';
 
 const router=createBrowserRouter([
   {
-    path:"/",
-    element:<App/>
+    element:<App/>,
+    children:[
+      {
+        path:"/",
+        element:<Home/>
+      },
+      {
+        path:"/dashboard",
+        element:<Dashboard/>
+      }
+    ]
+
   },
   {
     path:"/auth/sign-in",
