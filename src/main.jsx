@@ -9,7 +9,7 @@ import {
 } from "react-router-dom";
 import SignInPage from './auth/sign-in/index.jsx'  
 import { Home } from 'lucide-react';
-import Dashboard from './dashboard/index.js';
+import Dashboard from './dashboard/index.jsx';
 
 const router=createBrowserRouter([
   {
